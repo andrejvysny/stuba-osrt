@@ -5,8 +5,8 @@ int main(int argc, char *argv[]) {
 
     int i = atoi(argv[1]);
 
-    if ((i % 2) == 0) {
-        printf("Input argument must be odd number!\n");
+    if ((i % 2) == 0 || i < 0) {
+        printf("Input argument must be odd positive number!\n");
         return 1;
     }
 
